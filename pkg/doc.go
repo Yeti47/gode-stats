@@ -1,16 +1,19 @@
 /*
 Package godestats provides a client library for the Code::Stats API.
 
+Repository: https://github.com/Yeti47/gode-stats
+License: MIT
+
 Code::Stats is a programming statistics service that tracks your coding activity
 across different languages and projects. This library provides a clean, idiomatic
 Go interface for interacting with the Code::Stats API.
 
-Key Features:
-- Full support for Code::Stats API v1.0.1
-- Floating-point XP calculations for precise level percentages
+Features:
+- Code::Stats API client with full support for profile retrieval and pulse submission
+- XP calculator with floating-point percentage calculations
 - Token-based authentication
 - Comprehensive error handling
-- Clean separation of concerns with well-defined interfaces
+- Clean interfaces following Go best practices
 
 Basic Usage:
 
@@ -21,9 +24,9 @@ Basic Usage:
 		"fmt"
 		"log"
 
-		"github.com/user/gode-stats/pkg/client"
-		"github.com/user/gode-stats/pkg/xp"
-		godestats "github.com/user/gode-stats/pkg"
+		"github.com/Yeti47/gode-stats/pkg/client"
+		"github.com/Yeti47/gode-stats/pkg/xp"
+		godestats "github.com/Yeti47/gode-stats/pkg"
 	)
 
 	func main() {
